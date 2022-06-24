@@ -1,0 +1,14 @@
+<nav class="navbar">
+    <p class="greeting-placeholder"></p>
+    {% if username != None %}
+        <p class="greeting">Logged-in, {{ username }}</p>
+    {% else %}
+        <p class="greeting-hidden">Logged-in, {{ username }}</p>
+    {% endif %}
+    <ul class="menu-items">
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        <li><a href="{{ url_for('assignment3_1') }}">assignment3 part 1</a></li>
+        <li><a href="{{ url_for('assignment3_2') }}">assignment3 part 2</a></li>
+    </ul>
+</nav>
